@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章归档 - Aria的博客</title>
+    <meta name="description" content="Aria的博客文章归档，包含所有产品设计、设计思考和设计作品的文章">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minimal-style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/post-icon.css">
+    <!-- 添加Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- 添加Google字体 -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+    <style>
+        .archive-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .archive-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .archive-description {
+            color: #6c757d;
+            font-size: 18px;
+        }
+
+        .archive-categories {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .category-filter {
+            margin: 0 10px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background-color: #f8f9fa;
+            color: #495057;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .category-filter:hover,
+        .category-filter.active {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .archive-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .archive-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .archive-item-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .archive-item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .archive-item:hover .archive-item-image img {
+            transform: scale(1.05);
+        }
+
+        .archive-item-content {
+            padding: 20px;
+        }
+
+        .archive-item-category {
+            display: inline-block;
+            font-size: 12px;
+            color: #3498db;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .archive-item-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .archive-item-title a {
+            color: #212529;
+            text-decoration: none;
+        }
+
+        .archive-item-title a:hover {
+            color: #3498db;
+        }
+
+        .archive-item-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .archive-item-excerpt {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+
+        .archive-item-readmore {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .archive-item-readmore i {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .archive-item-readmore:hover i {
+            transform: translateX(3px);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-navigation">
+                <ul class="menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="posts/product-design.html">产品设计</a></li>
+                    <li><a href="posts/startup.html">设计思考</a></li>
+                    <li><a href="posts/design-works.html">设计作品</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-content">
+        <div class="container">
+            <section class="archive-header">
+                <h1 class="archive-title">文章归档</h1>
+                <p class="archive-description">浏览所有文章</p>
+            </section>
+
+            <section class="archive-categories">
+                <a href="#" class="category-filter active">全部</a>
+                <a href="#" class="category-filter">产品设计</a>
+                <a href="#" class="category-filter">设计思考</a>
+                <a href="#" class="category-filter">设计作品</a>
+            </section>
+
+            <section class="archive-grid">
+                <!-- 文章1 -->
+                <article class="archive-item">
+                    <div class="archive-item-image">
+                        <img src="images/placeholder-1.jpg" alt="文章配图">
+                    </div>
+                    <div class="archive-item-content">
+                        <span class="archive-item-category">产品设计</span>
+                        <h2 class="archive-item-title"><a href="posts/example-post-1.html">如何通过用户研究优化产品体验</a></h2>
+                        <div class="archive-item-date"><i class="far fa-calendar-alt"></i> 2023年10月15日</div>
+                        <p class="archive-item-excerpt">在产品设计过程中，用户研究是不可或缺的环节。本文将分享我在创业过程中如何通过用户研究来优化产品体验...</p>
+                        <a href="posts/example-post-1.html" class="archive-item-readmore">阅读全文 <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 文章2 -->
+                <article class="archive-item">
+                    <div class="archive-item-image">
+                        <img src="images/placeholder-2.jpg" alt="文章配图">
+                    </div>
+                    <div class="archive-item-content">
+                        <span class="archive-item-category">设计思考</span>
+                        <h2 class="archive-item-title"><a href="posts/example-post-2.html">初创团队如何高效协作</a></h2>
+                        <div class="archive-item-date"><i class="far fa-calendar-alt"></i> 2024年3月15日</div>
+                        <p class="archive-item-excerpt">作为Co-founder，团队协作效率直接影响创业成败。本文分享我在组建和管理初创团队过程中的经验和教训...</p>
+                        <a href="posts/example-post-2.html" class="archive-item-readmore">阅读全文 <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 文章3 -->
+                <article class="archive-item">
+                    <div class="archive-item-image">
+                        <img src="images/placeholder-3.jpg" alt="文章配图">
+                    </div>
+                    <div class="archive-item-content">
+                        <span class="archive-item-category">设计作品</span>
+                        <h2 class="archive-item-title"><a href="posts/example-post-3.html">我的产品设计作品集：从构思到实现</a></h2>
+                        <div class="archive-item-date"><i class="far fa-calendar-alt"></i> 2024年4月5日</div>
+                        <p class="archive-item-excerpt">这篇文章展示了我近期完成的几个产品设计案例，包括设计思路、用户反馈以及迭代过程...</p>
+                        <a href="posts/example-post-3.html" class="archive-item-readmore">阅读全文 <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 文章4 -->
+                <article class="archive-item">
+                    <div class="archive-item-image">
+                        <img src="images/placeholder-1.jpg" alt="文章配图">
+                    </div>
+                    <div class="archive-item-content">
+                        <span class="archive-item-category">设计思考</span>
+                        <h2 class="archive-item-title"><a href="posts/post-20250329.html">第一篇博客，写在星巴克</a></h2>
+                        <div class="archive-item-date"><i class="far fa-calendar-alt"></i> 2024年3月29日</div>
+                        <p class="archive-item-excerpt">我的博客终于搞出来了，写了第一篇文章...</p>
+                        <a href="posts/post-20250329.html" class="archive-item-readmore">阅读全文 <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">首页</a>
+                <a href="posts/product-design.html">产品设计</a>
+                <a href="posts/startup.html">设计思考</a>
+                <a href="posts/design-works.html">设计作品</a>
+                <a href="about.html">关于我</a>
+            </div>
+            <div class="social-links">
+                <a href="#" title="微信"><i class="fab fa-weixin"></i></a>
+                <a href="#" title="微博"><i class="fab fa-weibo"></i></a>
+                <a href="#" title="知乎"><i class="fab fa-zhihu"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 版权所有。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+
+</html>

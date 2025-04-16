@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的产品设计作品集：从构思到实现 - Aria的博客</title>
+    <meta name="description" content="这篇文章展示了我近期完成的几个产品设计案例，包括设计思路、用户反馈以及迭代过程。">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/minimal-style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <!-- 添加Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- 添加Google字体 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <style>
+        /* 文章页面特定样式 */
+        .article-content {
+            line-height: 1.8;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content h2 {
+            margin: 40px 0 20px;
+            font-size: 24px;
+        }
+
+        .article-content h3 {
+            margin: 30px 0 15px;
+            font-size: 20px;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .article-content li {
+            margin-bottom: 10px;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        .article-meta {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .article-category {
+            display: inline-block;
+            background-color: #e9ecef;
+            color: #3498db;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .article-date {
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        .article-tags {
+            margin-top: 10px;
+        }
+
+        .article-tag {
+            display: inline-block;
+            background-color: #f8f9fa;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 5px;
+            color: #6c757d;
+        }
+
+        .article-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .nav-previous,
+        .nav-next {
+            max-width: 45%;
+        }
+
+        .nav-previous a,
+        .nav-next a {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-previous i {
+            margin-right: 10px;
+        }
+
+        .nav-next i {
+            margin-left: 10px;
+        }
+
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .portfolio-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .portfolio-item-caption {
+            padding: 15px;
+            background: #f8f9fa;
+        }
+
+        .portfolio-item-caption h4 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .portfolio-item-caption p {
+            margin: 0;
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-navigation">
+                <ul class="menu">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="product-design.html">产品设计</a></li>
+                    <li><a href="startup.html">设计思考</a></li>
+                    <li class="active"><a href="design-works.html">设计作品</a></li>
+                    <li><a href="../about.html">关于我</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-content">
+        <div class="container">
+            <article class="single-article">
+                <header class="article-header">
+                    <h1 class="article-title">我的产品设计作品集：从构思到实现</h1>
+                    <div class="article-meta">
+                        <span class="article-category"><a href="design-works.html">设计作品</a></span>
+                        <span class="article-date"><i class="far fa-calendar-alt"></i> 2024年4月5日</span>
+                        <div class="article-tags">
+                            <span class="article-tag">产品设计</span>
+                            <span class="article-tag">UI/UX</span>
+                            <span class="article-tag">作品集</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-content">
+                    <p>作为一名产品设计师，我一直致力于创造既美观又实用的产品体验。这篇文章将展示我近期完成的几个产品设计案例，包括设计思路、用户反馈以及迭代过程。</p>
+
+                    <h2>项目一：VisOKR - 目标管理可视化工具</h2>
+                    <p>VisOKR是一款帮助团队可视化管理OKR（目标与关键结果）的工具，旨在提高团队协作效率和目标透明度。</p>
+
+                    <h3>设计挑战</h3>
+                    <p>传统的OKR管理工具往往过于复杂，用户需要花费大量时间学习使用。我的目标是设计一个直观、易用的界面，让用户能够快速上手。</p>
+
+                    <h3>设计过程</h3>
+                    <ul>
+                        <li><strong>用户研究</strong>：通过访谈10位潜在用户，了解他们在目标管理中的痛点和需求。</li>
+                        <li><strong>竞品分析</strong>：分析市场上现有的OKR工具，找出优缺点。</li>
+                        <li><strong>原型设计</strong>：基于研究结果，设计低保真原型并进行用户测试。</li>
+                        <li><strong>视觉设计</strong>：完成高保真设计，注重视觉层次和信息展示。</li>
+                    </ul>
+
+                    <div class="portfolio-gallery">
+                        <div class="portfolio-item">
+                            <img src="../images/placeholder-1.jpg" alt="VisOKR界面设计">
+                            <div class="portfolio-item-caption">
+                                <h4>VisOKR主界面</h4>
+                                <p>目标与进度的可视化展示</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="../images/placeholder-2.jpg" alt="VisOKR移动端设计">
+                            <div class="portfolio-item-caption">
+                                <h4>VisOKR移动端</h4>
+                                <p>随时随地查看和更新目标进度</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>成果与反馈</h3>
+                    <p>VisOKR上线后，获得了用户的积极反馈。特别是其直观的可视化界面和简洁的操作流程，大大降低了用户的学习成本。目前已有超过50家企业在使用我们的产品。</p>
+
+                    <blockquote>
+                        <p>"VisOKR让我们团队的目标管理变得如此简单，每个人都能清晰地看到自己的目标与公司战略的关联。" — 某科技公司产品总监</p>
+                    </blockquote>
+
+                    <h2>项目二：LifeSticker - 生活习惯养成应用</h2>
+                    <p>LifeSticker是一款帮助用户养成良好生活习惯的移动应用，通过游戏化元素提高用户的坚持度。</p>
+
+                    <h3>设计理念</h3>
+                    <p>习惯养成最大的挑战是坚持。我的设计理念是通过视觉反馈和成就系统，让用户在完成习惯任务时获得成就感，从而提高坚持度。</p>
+
+                    <div class="portfolio-gallery">
+                        <div class="portfolio-item">
+                            <img src="../images/placeholder-3.jpg" alt="LifeSticker应用界面">
+                            <div class="portfolio-item-caption">
+                                <h4>LifeSticker主界面</h4>
+                                <p>直观展示习惯完成情况</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>用户反馈与迭代</h3>
+                    <p>通过多轮用户测试和反馈收集，我们不断优化产品体验：</p>
+                    <ul>
+                        <li>增加社交分享功能，让用户可以与朋友分享自己的习惯养成进度</li>
+                        <li>优化提醒机制，根据用户习惯完成的时间段智能推送提醒</li>
+                        <li>增加数据分析功能，帮助用户了解自己的习惯养成趋势</li>
+                    </ul>
+
+                    <h2>设计心得</h2>
+                    <p>通过这些项目，我深刻体会到：</p>
+                    <ul>
+                        <li>用户研究是设计的基础，只有真正了解用户需求，才能设计出有价值的产品</li>
+                        <li>简约不等于简单，好的设计应该在简洁的界面中提供强大的功能</li>
+                        <li>设计是一个不断迭代的过程，通过持续收集用户反馈，产品才能不断进化</li>
+                    </ul>
+
+                    <p>如果你对我的设计作品感兴趣，或者有任何产品设计相关的问题，欢迎与我联系交流。</p>
+                </div>
+
+                <div class="article-navigation">
+                    <div class="nav-previous">
+                        <a href="example-post-2.html"><i class="fas fa-chevron-left"></i> 上一篇：初创团队如何高效协作</a>
+                    </div>
+                    <div class="nav-next">
+                        <a href="post-20250329.html">下一篇：第一篇博客，写在星巴克 <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="../index.html">首页</a>
+                <a href="product-design.html">产品设计</a>
+                <a href="startup.html">设计思考</a>
+                <a href="design-works.html">设计作品</a>
+                <a href="../about.html">关于我</a>
+            </div>
+            <div class="social-links">
+                <a href="#" title="微信"><i class="fab fa-weixin"></i></a>
+                <a href="#" title="微博"><i class="fab fa-weibo"></i></a>
+                <a href="#" title="知乎"><i class="fab fa-zhihu"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 版权所有。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+
+</html>
